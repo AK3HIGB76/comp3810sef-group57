@@ -1,0 +1,19 @@
+{
+  "name": "comp3810-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-session": "^2.1.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-formidable": "^1.2.0",
+    "mongodb": "^7.0.0"
+  }
+}
