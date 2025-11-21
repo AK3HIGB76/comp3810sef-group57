@@ -3,7 +3,7 @@ const session = require("express-session");
 const { MongoClient, ObjectId } = require("mongodb");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // -------------------------------
 // 1. MongoDB Connection
@@ -289,20 +289,24 @@ app.delete("/api/inventory/:id", async (req, res) => {
 // 6. Start Server + Connect DB
 // -------------------------------
 async function startServer() {
-    try {
-        await client.connect();
-        const db = client.db("comp3810db");
-        usersCollection = db.collection("users");
-        inventoryCollection = db.collection("inventory"); // ← NEW
+  try {
+    await client.connect();
+    const db = client.db("comp3810db");
+    usersCollection = db.collection("users");
+    inventoryCollection = db.collection("inventory"); // NEW
 
-        console.log("Connected to MongoDB (Cluster00)");
-        app.listen(port, () =>
-            console.log(`Server running at http://localhost:${port}`)
-        );
-    } catch (err) {
-        console.error(err);
-    }
+    console.log("Connected to MongoDB (Cluster00)");
+
+    app.listen(port, () => {
+      console.log(`Server running on port ${port}`);
+    });
+  } catch (err) {
+    console.error(err);
+  }
 }
+
+startServer();
+
 
 
 startServer();
