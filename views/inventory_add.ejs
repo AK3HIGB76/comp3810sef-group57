@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System - Add Item</title>
+</head>
+<body>
+    <h1>Inventory Management System</h1>
+    <h2>Add New Inventory Item</h2>
+
+    <p>Logged in as: <strong><%= staffID %></strong></p>
+
+    <p>
+        <a href="/inventory">Back to Inventory List</a> |
+        <a href="/dashboard">Dashboard</a> |
+        <a href="/logout">Logout</a>
+    </p>
+
+    <% if (error) { %>
+        <p style="color:red;"><%= error %></p>
+    <% } %>
+
+    <form method="POST" action="/inventory/add">
+        <label>Item Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" min="0" required><br><br>
+
+        <label>Category:</label><br>
+        <input type="text" name="category" required><br><br>
+
+        <label>Price:</label><br>
+        <input type="number" name="price" step="0.01" min="0" required><br><br>
+
+        <label>Status:</label><br>
+        <select name="status" required>
+            <option value="">-- Select Status --</option>
+            <option value="Available">Available</option>
+            <option value="Out of Stock">Out of Stock</option>
+        </select><br><br>
+
+        <button type="submit">Save Item</button>
+    </form>
+</body>
+</html>
+
