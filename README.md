@@ -53,8 +53,10 @@ All CRUD pages are protected; Access via /inventory after login.
 | **Delete**  | DELETE     | /api/inventory/:id    | Delete item by '_id'.       |
 
 **How to Test**
-- **GET all**: curl https://comp3810sef-group57.onrender.com/api/inventory
-- **POST add**: curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/69201d7e9a0f5b8367d9dcca \
+- **GET all**: `curl https://comp3810sef-group57.onrender.com/api/inventory`
+- **POST add**: `curl -X POST https://comp3810sef-group57.onrender.com/api/inventory \
 -H "Content-Type: application/json" \
--d '{"quantity":999}'
-- **PUT update**: `curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/66f9a1b2c3d4e5f6789abcd -H "Content-Type: application/json" -d '{"quantity":999}'`
+-d '{"name":"Pencil", "quantity":100, "category":"Stationary", "price":2, "status":"Available"}'`
+- **PUT update**: `curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/69201d7e9a0f5b8367d9dcca \
+-H "Content-Type: application/json" \
+-d '{"quantity":999}'`
