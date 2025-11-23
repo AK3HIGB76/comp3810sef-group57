@@ -41,5 +41,5 @@ All CRUD pages are protected; Access via /inventory after login.
 |-------------|-----------|
 | **Create**  | From /inventory list, click "Add New Item" Button -> Redirects to /add form -> Fill all data and click "Save item"|
 | **Read**| Visit /inventory -. Shows table of all items sorted by name|
-| **Update**| In /inventory list, click "Edit" button in action field -> Redirects to Modify 
-| **Delete**||
+| **Update**| In /inventory list, click "Edit" button in action field -> Redirects to /edit form -> Modify data and click "Update Item"|
+| **Delete**| In /inventory list, click "Delete" button in action field -> Pop-up confirm remind -> click confirm then delete item; click cancel then noting happend|
