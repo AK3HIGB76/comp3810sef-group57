@@ -1,8 +1,3 @@
-# 1. Project info:
-- **project Name**: Inventory Management System
-- **Group Number**: Group 57
-- **Group Members**:
-
 ## 1. Project Information
 - **Project Name**: Inventory Management System  
 - **Group Number**: Group 57  
