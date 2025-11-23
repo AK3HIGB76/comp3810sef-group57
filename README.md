@@ -9,10 +9,10 @@
 - **Group Members**:
   | Name             | Student ID   |
   |------------------|--------------|
-  |    |     |
+  | Ip Ka Chung      | 14108542     |
   | Yung Tsz Chai    | 14109090     |
-  |    |     |
-  |    |     |
+  | Mok Chun Hei     | 14030330     |
+  | Ching Chin Ming  | 14108289     |
   
 ## 2. Project File Introduction
   | File / Folder     | Description |
