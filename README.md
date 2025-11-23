@@ -27,9 +27,9 @@
 ## 4. Operation Guides
 
 ### Use of Login/Logout Pages
-  **Login**:
-  -Staff ID: '(StaffID )'
-  -Password: '(Password)'
+**Login**:
+  -Staff ID: '(StaffID )'.
+  -Password: '(Password)'.
 **Step**:
   1. Visit the login page.
   2. Enter Staff ID and Password in the form.
