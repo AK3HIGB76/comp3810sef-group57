@@ -43,3 +43,16 @@ All CRUD pages are protected; Access via /inventory after login.
 | **Read**| Visit /inventory -. Shows table of all items sorted by name|
 | **Update**| In /inventory list, click "Edit" button in action field -> Redirects to /edit form -> Modify data and click "Update Item"|
 | **Delete**| In /inventory list, click "Delete" button in action field -> Pop-up confirm remind -> click confirm then delete item; click cancel then noting happend|
+
+### 4.3 Use of RESTful CRUD Services
+| Operation   | HTTP Method | Path URI              | Description |
+|-------------|-------------|-----------------------|----------------------------|
+| **Read**    | GET        | /api/inventory        | Returns array of all items. |
+| **Create**  | POST       | /api/inventory        | Add new item.               |
+| **Update**  | PUT        | /api/inventory/:id    | Update item by _id.         |
+| **Delete**  | DELETE     | /api/inventory/:id    | Delete item by _id.         |
+
+**How to Test**
+- **GET all**: `curl https://comp3810sef-group57.onrender.com/api/inventory`
+- **POST add**: `curl -X POST https://comp3810sef-group57.onrender.com/api/inventory -H "Content-Type: application/json" -d '{"name":"A4 Paper","quantity":500,"category":"Office Supplies","price":3,"status":"Available"}'`
+- **PUT update**: `curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/66f9a1b2c3d4e5f6789abcd -H "Content-Type: application/json" -d '{"quantity":999}'`
