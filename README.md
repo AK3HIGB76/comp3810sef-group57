@@ -28,13 +28,15 @@
 
 ### Use of Login/Logout Pages
 **Login**:
-  -Staff ID: '(StaffID )'.
-  -Password: '(Password)'.
+  -Staff ID: '(StaffID )'
+  -Password: '(Password)'
+  
 **Step**:
   1. Visit the login page.
   2. Enter Staff ID and Password in the form.
   3. Click "Login" button -redirects to /dashboard on success; shows error on failure.
   4. To register new staff, click link "Register here" to /register.
+     
 **Logout**:
   From any page, click "Logout" link to /logout.
   
