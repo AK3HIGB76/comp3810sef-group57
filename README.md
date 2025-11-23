@@ -48,11 +48,13 @@ All CRUD pages are protected; Access via /inventory after login.
 | Operation   | HTTP Method | Path URI              | Description |
 |-------------|-------------|-----------------------|----------------------------|
 | **Read**    | GET        | /api/inventory        | Returns array of all items. |
-| **Create**  | POST       | /api/inventory        | Add new item.               |
-| **Update**  | PUT        | /api/inventory/:id    | Update item by _id.         |
-| **Delete**  | DELETE     | /api/inventory/:id    | Delete item by _id.         |
+| **Create**  | POST       | /api/inventory        | Add a new inventory item.   |
+| **Update**  | PUT        | /api/inventory/:id    | Update item by '_id'.       |
+| **Delete**  | DELETE     | /api/inventory/:id    | Delete item by '_id'.       |
 
 **How to Test**
-- **GET all**: `curl https://comp3810sef-group57.onrender.com/api/inventory`
-- **POST add**: `curl -X POST https://comp3810sef-group57.onrender.com/api/inventory -H "Content-Type: application/json" -d '{"name":"A4 Paper","quantity":500,"category":"Office Supplies","price":3,"status":"Available"}'`
+- **GET all**: curl https://comp3810sef-group57.onrender.com/api/inventory
+- **POST add**: curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/69201d7e9a0f5b8367d9dcca \
+-H "Content-Type: application/json" \
+-d '{"quantity":999}'
 - **PUT update**: `curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/66f9a1b2c3d4e5f6789abcd -H "Content-Type: application/json" -d '{"quantity":999}'`
