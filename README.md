@@ -21,7 +21,7 @@
  
 ## 4. Operation Guides
 
-### Use of Login/Logout Pages
+### 4.1 Use of Login/Logout Pages
 **Login**:
   -Staff ID: '(StaffID )'
   -Password: '(Password)'
@@ -34,4 +34,12 @@
      
 **Logout**:
   From any page, click "Logout" link to /logout.
-  
+
+### 4.2 Use of CRUD Web Pages
+All CRUD pages are protected; Access via /inventory after login.
+| Operation   | UI/Steps  |
+|-------------|-----------|
+| **Create**  | From /inventory list, click "Add New Item" Button -> Redirects to /add form -> Fill all data and click "Save item"|
+| **Read**| Visit /inventory -. Shows table of all items sorted by name|
+| **Update**| In /inventory list, click "Edit" button in action field -> Redirects to Modify 
+| **Delete**||
