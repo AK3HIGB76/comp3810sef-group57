@@ -60,4 +60,4 @@ All CRUD pages are protected; Access via /inventory after login.
 - **PUT update**: `curl -X PUT https://comp3810sef-group57.onrender.com/api/inventory/69201d7e9a0f5b8367d9dcca \
 -H "Content-Type: application/json" \
 -d '{"quantity":999}'`
-- **Delete delete**: `curl -X DELETE https://comp3810sef-group57.onrender.com/api/inventory/6922ffa75b69045c326b7b23`
+- **DELETE delete**: `curl -X DELETE https://comp3810sef-group57.onrender.com/api/inventory/6922ffa75b69045c326b7b23`
