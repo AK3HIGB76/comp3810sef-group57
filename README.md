@@ -2,8 +2,6 @@
 - **project Name**: Inventory Management System
 - **Group Number**: Group 57
 - **Group Members**:
-# COMP3810 Server-side Technologies – Group Project  
-**Inventory Management System with Staff Authentication**
 
 ## 1. Project Information
 - **Project Name**: Inventory Management System  
