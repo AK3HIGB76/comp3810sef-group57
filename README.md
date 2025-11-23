@@ -19,11 +19,9 @@
   # 2. Project File Introduction
   | File / Folder     | Description |
   |-------------------|-------------|
-  | **server.js**     | The main program includes: Express setup, MongoDB connection, session login system, employee   |          |                   | registration, protected Inventory CRUD webpage, and RESTful API (/api/inventory).              |
-  ----------------------------------------------------------------------------------------------------------------------
-  | **package.json**  | Dependencies: express, ejs, express-session, mongodb, cookie-session, express-formidable       |
-  ----------------------------------------------------------------------------------------------------------------------
-  | **Views**         | 'dashboard.ejs', 'inventory_add.ejs', 'inventory_edit.ejs', 'inventory_list.ejs', 'login.ejs', |          |                   | 'register.ejs'                                                                                 |
+  | **server.js**     | The main program includes: Express setup, MongoDB connection, session login system, employee registration, protected Inventory CRUD webpage, and RESTful API (/api/inventory). |
+  | **package.json**  | Dependencies: express, ejs, express-session, mongodb, cookie-session, express-formidable   |
+  | **Views**         | 'dashboard.ejs', 'inventory_add.ejs', 'inventory_edit.ejs', 'inventory_list.ejs', 'login.ejs', 'register.ejs'   |
  
   ## 3. Cloud-based Server URL
   - https://comp3810sef-group57.onrender.com
